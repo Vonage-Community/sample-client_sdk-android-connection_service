@@ -1,4 +1,4 @@
-package com.vonage.tutorial.phonetoappabdul24
+package com.vonage.tutorial.phonetoappabdul
 
 import org.junit.Test
 

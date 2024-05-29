@@ -1,4 +1,4 @@
-package com.vonage.tutorial.phonetoappabdul24
+package com.vonage.tutorial.phonetoappabdul
 
 import android.content.ComponentName
 import android.content.Context
@@ -7,8 +7,6 @@ import android.os.Bundle
 import android.telecom.PhoneAccount
 import android.telecom.PhoneAccountHandle
 import android.telecom.TelecomManager
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import com.google.firebase.messaging.RemoteMessage
 import com.vonage.voice.api.*
 import android.Manifest

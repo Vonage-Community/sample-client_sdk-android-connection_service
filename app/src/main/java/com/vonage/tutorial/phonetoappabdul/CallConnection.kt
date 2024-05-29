@@ -1,14 +1,7 @@
-package com.vonage.tutorial.phonetoappabdul24
+package com.vonage.tutorial.phonetoappabdul
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.telecom.Connection
-import android.telecom.DisconnectCause
-import android.widget.Button
-import com.google.firebase.messaging.RemoteMessage
-import com.vonage.android_core.PushType
-import com.vonage.voice.api.CallId
-import com.vonage.voice.api.VoiceClient
 
 class CallConnection(
     context: Context

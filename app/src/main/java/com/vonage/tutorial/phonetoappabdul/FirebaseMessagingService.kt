@@ -1,4 +1,4 @@
-package com.vonage.tutorial.phonetoappabdul24
+package com.vonage.tutorial.phonetoappabdul
 
 import com.google.firebase.messaging.FirebaseMessaging
 import com.google.firebase.messaging.FirebaseMessagingService

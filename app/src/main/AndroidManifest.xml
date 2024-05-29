@@ -25,14 +25,14 @@
             </intent-filter>
         </activity>
         <!-- CSDemo: Add the FirebaseMessaging and ConnectionService services -->
-        <service android:name="com.vonage.tutorial.phonetoappabdul24.FirebaseMessagingService"
+        <service android:name="com.vonage.tutorial.phonetoappabdul.FirebaseMessagingService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
         <service
-            android:name="com.vonage.tutorial.phonetoappabdul24.CallConnectionService"
+            android:name="com.vonage.tutorial.phonetoappabdul.CallConnectionService"
             android:permission="android.permission.BIND_TELECOM_CONNECTION_SERVICE"
             android:exported="false">
             <intent-filter>

@@ -1,11 +1,7 @@
-package com.vonage.tutorial.phonetoappabdul24
+package com.vonage.tutorial.phonetoappabdul
 
 import android.net.Uri
-import android.os.Build
 import android.telecom.*
-import androidx.annotation.RequiresApi
-import com.google.firebase.messaging.RemoteMessage
-import org.json.JSONObject
 
 
 class CallConnectionService : ConnectionService() {

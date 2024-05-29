@@ -6,7 +6,7 @@ plugins {
 
 android {
     defaultConfig {
-        applicationId "com.vonage.tutorial.phonetoappabdul24"
+        applicationId "com.vonage.tutorial.phonetoappabdul"
         minSdkVersion 26
         targetSdkVersion 34
         compileSdk 34
@@ -30,7 +30,7 @@ android {
         jvmTarget = '1.8'
     }
     // CSDemo: your applicationId should match your package name and Firebase project app package ID
-    namespace 'com.vonage.tutorial.phonetoappabdul24'
+    namespace 'com.vonage.tutorial.phonetoappabdul'
 }
 
 dependencies {
