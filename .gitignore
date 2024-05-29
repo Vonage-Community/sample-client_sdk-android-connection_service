@@ -2,6 +2,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/android
 # Edit at https://www.toptal.com/developers/gitignore?templates=android
 
+androidpush24-firebase-adminsdk-1ez62-c0c7ccd77b.json
+.DS_Store
+
 ### Android ###
 # Gradle files
 .gradle/

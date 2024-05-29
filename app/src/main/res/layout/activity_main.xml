@@ -16,43 +16,11 @@
             app:layout_constraintRight_toRightOf="parent" />
 
     <Button
-            android:id="@+id/loginButton"
+            android:id="@+id/telecomButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="40dp"
-            android:text="Login" />
-
-    <Button
-            android:id="@+id/telecomPermissionButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="40dp"
-            android:text="Enable Telecom Permission" />
-
-    <Button
-            android:id="@+id/answerCallButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="40dp"
-            android:text="Answer"
-            android:visibility="gone"
-            tools:visibility="visible" />
-
-    <Button
-            android:id="@+id/rejectCallButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="40dp"
-            android:text="Reject"
-            android:visibility="gone"
-            tools:visibility="visible" />
-
-    <Button
-            android:id="@+id/endCallButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="40dp"
-            android:text="End"
+            android:text="Enable Telecom"
             android:visibility="gone"
             tools:visibility="visible" />
 
