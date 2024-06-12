@@ -50,6 +50,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    // CSDemo: The user needs to explicitly allow your application to handle calls.
     private fun enableTelecomPermission() {
         val intent = Intent()
         intent.setClassName(

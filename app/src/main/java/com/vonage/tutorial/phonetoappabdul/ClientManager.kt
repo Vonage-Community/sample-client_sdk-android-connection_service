@@ -53,7 +53,6 @@ class ClientManager(private val context: Context) {
         telecomManager.registerPhoneAccount(phoneAccount)
     }
 
-    // TODO: update to the correct style
     fun login(callback: ((String) -> Unit)? = null) {
         client.createSession(token) { err, sessionId ->
             when {
@@ -77,12 +76,14 @@ class ClientManager(private val context: Context) {
     private fun setListeners() {
         // CSDemo: (4) If the push is processed correctly, the setCallInviteListener is called.
         client.setCallInviteListener { incomingCallId, from, _ ->
-            callInvite = incomingCallId
-            val extras = Bundle()
-            extras.putString("from", from)
-            telecomManager.isIncomingCallPermitted(phoneAccountHandle)
-            // CSDemo: This calls the onCreateIncomingConnection function in the CallConnectionService class
-            telecomManager.addNewIncomingCall(phoneAccountHandle, extras)
+            if (telecomManager.isIncomingCallPermitted(phoneAccountHandle)) {
+                callInvite = incomingCallId
+                val extras = Bundle()
+                extras.putString("from", from)
+
+                // CSDemo: This calls the onCreateIncomingConnection function in the CallConnectionService class
+                telecomManager.addNewIncomingCall(phoneAccountHandle, extras)
+            }
         }
     }
 

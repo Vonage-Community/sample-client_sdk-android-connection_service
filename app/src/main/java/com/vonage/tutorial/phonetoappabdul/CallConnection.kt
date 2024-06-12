@@ -9,6 +9,10 @@ class CallConnection(
 
     private var clientManager = ClientManager.getInstance(context)
 
+    init {
+        audioModeIsVoip = true
+    }
+
     // CSDemo: (6) Here you will get events back from the system UI.
 
     override fun onDisconnect() {
@@ -16,6 +20,7 @@ class CallConnection(
     }
 
     override fun onAnswer() {
+        setActive()
         clientManager.answerCall(this)
     }
 

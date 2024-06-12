@@ -16,7 +16,7 @@ class CallConnectionService : ConnectionService() {
         val connection = CallConnection(this)
         connection.setAddress(Uri.parse("tel:$from"), TelecomManager.PRESENTATION_ALLOWED)
         connection.connectionProperties = Connection.PROPERTY_SELF_MANAGED
-        connection.setInitializing()
+        connection.setRinging()
         return connection
     }
 
